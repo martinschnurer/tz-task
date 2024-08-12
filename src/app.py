@@ -36,7 +36,7 @@ def find_timezone(obj):
 
             return jsonify({"tzid": shape_record.record.tzid})
         else:
-            return jsonify({"tzid": None, "error": "true"})
+            return jsonify({"tzid": None, "error": True})
 
 
 @app.route("/timezones")
